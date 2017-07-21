@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+    <a-sphere position="-4 1 0" radius="1.4" src="sun2.png"></a-sphere>
+    <a-entity geometry="primitive: sphere; radius: 0.6"
+          light="type: point; color: red; intensity: 2"
+          material="; shader: flat; src: earth2.jpg"
+          position="0  0.6 -4" from= "0 0 0" to="0 360 0">
+          <a-animation attribute="rotation" repeat="indefinite" dur="20000" from="0 0 0" to="0 360 0"></a-animation>
+     	
+          </a-entity>
+
+    <a-sky src="galaxy.jpg" rotation="0 -130 0"></a-sky>
+    </a-scene>
+    </body>
+    </html>
